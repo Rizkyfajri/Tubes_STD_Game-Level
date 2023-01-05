@@ -190,7 +190,7 @@ void findLevel(listLevel L1, listType L2, infotype X){
     addr3 R;
 
     if (Q != NIL){
-        cout << "\nLevel " << info(Q) << " memiliki tipe : " << endl;
+        cout << "\nType " << info(Q) << " dimiliki oleh level : " << endl;
         P = first(L1);
         while (P != NIL){
             R = firstR(P);
@@ -242,7 +242,7 @@ void menuUtama(){
     cout << "1. Print Level" << endl;
     cout << "2. Print Attribut level" << endl;
     cout << "3. Print level dengan typenya" << endl;
-    cout << "4. Cari level" << endl;
+    cout << "4. Cari Type" << endl;
     cout << "5. Insert First Level" << endl;
     cout << "6. Insert First Type" << endl;
     cout << "7. Insert Last Level" << endl;
@@ -252,7 +252,7 @@ void menuUtama(){
     cout << "11. Delete First Type" << endl;
     cout << "12. Search Level" << endl;
     cout << "13. Search Attribute type" << endl;
-    cout << "14. Keluar" << endl;
+    cout << "0 . Keluar" << endl;
     cout << "\nPilihan Anda : ";
 }
 
@@ -267,7 +267,7 @@ void menuPilihan(int pil, listLevel &L1, listType &L2){
                  break;
         case 3 : printRelasi(L1,L2);
                  break;
-        case 4 : cout << "\nCari level  : ";
+        case 4 : cout << "\nCari Type  : ";
                  cin >> namaLevel;
                  findLevel(L1,L2,namaLevel);
                  break;
